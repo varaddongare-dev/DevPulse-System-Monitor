@@ -6,7 +6,7 @@ A lightweight, real-time, high-performance system monitoring dashboard built wit
 
 Below is the execution state of the active deployment panel capturing hardware distribution:
 
-![DevPulse System Monitor Dashboard](./.github/assets/screenshot.png)
+![DevPulse System Monitor Dashboard](./.github/Assets/screenshot.png)
 
 ---
 
