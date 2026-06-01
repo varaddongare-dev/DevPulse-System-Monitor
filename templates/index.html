@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevPulse Monitor - System Dashboard</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+    <div class="dashboard">
+        <h1>📊 DevPulse System Monitor</h1>
+        
+      <div class="grid">
+            <div class="card" id="cpu-card">
+                <h3>CPU Usage</h3>
+                <p id="cpu-text">0%</p> <small id="cpu-model" class="spec-label">Detecting CPU Model...</small>
+            </div>
+            
+            <div class="card" id="gpu-card">
+                <h3>GPU Usage</h3>
+                <p id="gpu-text">0%</p> <small id="gpu-model" class="spec-label">Detecting GPU Model...</small>
+            </div>
+            
+            <div class="card" id="ram-card">
+                <h3>RAM Usage</h3>
+                <p id="ram-text">0%</p> <small id="ram-spec" class="spec-label">Detecting RAM...</small>
+            </div>
+            
+            <div class="card" id="disk-card">
+                <h3>Disk Space Used</h3>
+                <p id="disk-text">0%</p> <small id="disk-spec" class="spec-label">Detecting Storage...</small>
+            </div>
+        </div>
+        <div class="grid row-2">
+            <div class="card chart-container">
+                <h3>CPU Tracking (Live Engine Data)</h3>
+                <canvas id="cpuChart"></canvas>
+            </div>
+            
+            <div class="card utility-container">
+                <h3>Network & Processes</h3>
+                <div class="ping-section">
+                    <button id="ping-btn">Test Latency (Ping)</button>
+                    <span id="ping-text">-- ms</span>
+                </div>
+                <hr>
+                <h4>Top Heavy Processes</h4>
+                <ul id="process-list">
+                    <li>Waiting for backend...</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}?v=1.1"></script>
+</body>
+</html>

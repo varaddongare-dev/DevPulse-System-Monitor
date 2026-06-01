@@ -1,0 +1,14 @@
+# Force text standardizations across Windows, Linux, and Mac
+* text=auto
+
+# Explicitly normalize script line endings to LF
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Keep media distributions static and binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary

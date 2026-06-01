@@ -1,0 +1,22 @@
+# Python Runtime Caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.elc
+.Python
+
+# Environment Variables Configuration
+.env
+.flaskenv
+
+# Virtual Environments
+venv/
+ENV/
+env/
+.venv/
+
+# Operating System Trashes & IDE metadata
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
